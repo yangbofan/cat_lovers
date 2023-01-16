@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "cat_lovers",
+  "appid": "testAppId",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}
