@@ -1,8 +1,9 @@
 import { Component, PropsWithChildren } from 'react'
-import { View } from '@tarojs/components'
+import { ScrollView } from '@tarojs/components'
 import StatusBarHeight from '../../components/statusBarHeight'
 import Headers from '../../components/header'
 import Cards from '../../components/card'
+import Calendar from '../../components/calendar'
 import './index.less'
 
 export default class Index extends Component<PropsWithChildren> {
@@ -12,11 +13,19 @@ export default class Index extends Component<PropsWithChildren> {
 
   render () {
     return (
-      <View className='index'>
+      <ScrollView
+        scrollY
+        scrollWithAnimation
+        className='index-page'
+      >
         <StatusBarHeight />
         <Headers />
+        <Calendar />
         <Cards />
-      </View>
+        <Cards />
+        <Cards />
+        <Cards />
+      </ScrollView>
     )
   }
 }
