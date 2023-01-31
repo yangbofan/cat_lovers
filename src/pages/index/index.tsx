@@ -4,6 +4,8 @@ import StatusBarHeight from '../../components/statusBarHeight'
 import Headers from '../../components/header'
 import Cards from '../../components/card'
 import Calendar from '../../components/calendar'
+import Tips from '../../components/tips'
+import Category from '../../components/category'
 import './index.less'
 
 export default class Index extends Component<PropsWithChildren> {
@@ -21,6 +23,8 @@ export default class Index extends Component<PropsWithChildren> {
         <StatusBarHeight />
         <Headers />
         <Calendar />
+        <Category />
+        <Tips text='推荐列表'/>
         <Cards />
         <Cards />
         <Cards />
